@@ -2,7 +2,8 @@ package com.maya.controller;
 
 import com.maya.model.Event;
 import com.maya.model.SearchRequest;
-import com.maya.service.ChatGptEventProvider;
+import com.maya.service.AIEventProvider;
+import com.maya.service.EventProvider;
 import com.maya.service.EventService;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
@@ -13,10 +14,10 @@ import java.util.List;
 @RequestMapping("/api/events")
 @CrossOrigin(origins = "*")
 public class EventController {
-    private final ChatGptEventProvider provider;
+    private final EventProvider provider;
     private final EventService store;
 
-    public EventController(ChatGptEventProvider p, EventService s) {
+    public EventController(EventProvider p, EventService s) {
         provider = p;
         store = s;
     }
