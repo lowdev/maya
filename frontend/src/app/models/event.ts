@@ -1,0 +1,1 @@
+export interface Event { id:string; title:string; description:string; shortDescription:string; imageUrl:string; location:string; startDateTime:string; endDateTime?:string; }
