@@ -1,0 +1,51 @@
+import com.github.gradle.node.npm.task.NpmTask
+
+plugins {
+    id "com.github.node-gradle.node" version "7.0.2"
+}
+
+group='com.maya'
+
+version='0.1.0'
+
+node {
+    version = '18.20.5'       // pick Node.js version your Angular app needs
+    npmVersion = '10.8.2'     // optional, or Yarn if you prefer
+    download = download = !isNodeAvailable()            // ✅ automatically download Node.js
+    workDir = file("${project.buildDir}/nodejs")   // where to install Node.js
+    npmWorkDir = file("${project.buildDir}/npm")   // local npm cache
+}
+
+def isNodeAvailable() {
+    try {
+        def proc = ["node", "-v"].execute()
+        proc.waitFor()
+        return proc.exitValue() == 0
+    } catch (Exception ignored) {
+        return false
+    }
+}
+
+// Path to Angular project
+def frontendDir = "C:/dev/projects/appProjects/maya/frontend"
+
+// Task: install Node dependencies
+/*task npmInstall(type: Exec) {
+    workingDir frontendDir
+    args = [ 'npm', 'install' ]
+}*/
+
+// Task: build Angular for production
+task buildAngular(type: NpmTask) {
+    dependsOn npmInstall
+    args = [ 'run', 'build', '--', '--configuration', 'production' ]
+}
+
+// Copy Angular dist files into Spring Boot static resources
+task copyFrontend(type: Copy) {
+    dependsOn buildAngular
+    from("${frontendDir}/dist/") {
+        include "**/*"
+    }
+    into("${projectDir}/src/main/resources/static/")
+}

@@ -3,3 +3,6 @@
 *.class
 build
 dist/
+*.class
+/backend/src/main/resources/static/maya-frontend/
+/backend/build
