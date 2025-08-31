@@ -13,7 +13,8 @@ export class InMemoryDataService implements InMemoryDbService {
            "location" : "Petit Bain, 7 Port de la Gare, 75013 Paris, France",
            "timezone" : null,
            "startDateTime" : "2025-08-29T18:00:00+02:00",
-           "endDateTime" : "2025-08-29T20:00:00+02:00"
+           "endDateTime" : "2025-08-29T20:00:00+02:00",
+           "size" : "small"
          }, {
            "q": "show me 12 events in Paris this week",
            "id" : "18753379-9372-4156-9285-638dea0a6542",
@@ -24,7 +25,8 @@ export class InMemoryDataService implements InMemoryDbService {
            "location" : "Parc de la Villette, Prairie du Triangle, 211 Avenue Jean Jaurès, 75019 Paris, France",
            "timezone" : null,
            "startDateTime" : "2025-08-29T19:30:00+02:00",
-           "endDateTime" : "2025-08-29T20:45:00+02:00"
+           "endDateTime" : "2025-08-29T20:45:00+02:00",
+           "size" : "big"
          }, {
            "q": "show me 12 events in Paris this week",
            "id" : "d702427f-362e-41d4-92e9-26b661400795",
@@ -35,7 +37,8 @@ export class InMemoryDataService implements InMemoryDbService {
            "location" : "Ground Control, 81 Rue du Charolais, 75012 Paris, France",
            "timezone" : null,
            "startDateTime" : "2025-08-29T21:00:00+02:00",
-           "endDateTime" : "2025-08-29T22:30:00+02:00"
+           "endDateTime" : "2025-08-29T22:30:00+02:00",
+           "size" : "medium"
          }, {
            "q": "show me 12 events in Paris this week",  
            "id" : "2e6a1b46-bb49-4d13-81de-88a733acba58",
@@ -46,7 +49,8 @@ export class InMemoryDataService implements InMemoryDbService {
            "location" : "59 Rivoli, 59 Rue de Rivoli, 75001 Paris, France",
            "timezone" : null,
            "startDateTime" : "2025-08-30T12:00:00+02:00",
-           "endDateTime" : "2025-08-30T14:30:00+02:00"
+           "endDateTime" : "2025-08-30T14:30:00+02:00",
+           "size" : "little"
          }, {
            "q": "show me 12 events in Paris this week",
            "id" : "f4d9b84f-b8f9-4630-a2c3-40b32739e8d1",
@@ -57,7 +61,8 @@ export class InMemoryDataService implements InMemoryDbService {
            "location" : "Jardin Tino Rossi – Quai Saint-Bernard, 75005 Paris, France",
            "timezone" : null,
            "startDateTime" : "2025-08-30T14:00:00+02:00",
-           "endDateTime" : "2025-08-30T18:00:00+02:00"
+           "endDateTime" : "2025-08-30T18:00:00+02:00",
+           "size" : "big"
          }, {
            "q": "show me 12 events in Paris this week",
            "id" : "7341b91b-340d-4155-bdbe-22dd50932353",
@@ -68,7 +73,8 @@ export class InMemoryDataService implements InMemoryDbService {
            "location" : "Parc des Buttes-Chaumont, 1 Rue Botzaris, 75019 Paris, France",
            "timezone" : null,
            "startDateTime" : "2025-08-30T21:30:00+02:00",
-           "endDateTime" : "2025-08-30T23:30:00+02:00"
+           "endDateTime" : "2025-08-30T23:30:00+02:00",
+           "size" : "small"
          }, {
            "q": "show me 12 events in Paris this week",
            "id" : "47dd1bec-a0c1-4d53-89ea-8c60ff199192",
@@ -79,7 +85,8 @@ export class InMemoryDataService implements InMemoryDbService {
            "location" : "Station F, 5 Parvis Alan Turing, 75013 Paris, France",
            "timezone" : null,
            "startDateTime" : "2025-08-31T10:00:00+02:00",
-           "endDateTime" : "2025-08-31T12:30:00+02:00"
+           "endDateTime" : "2025-08-31T12:30:00+02:00",
+           "size" : "small"
          }, {
            "q": "show me 12 events in Paris this week",
            "id" : "fbdc26db-b73f-44dd-8722-b81fbeeced14",
@@ -90,7 +97,8 @@ export class InMemoryDataService implements InMemoryDbService {
            "location" : "Le Carreau du Temple, 4 Rue Eugène Spuller, 75003 Paris, France",
            "timezone" : null,
            "startDateTime" : "2025-08-31T19:30:00+02:00",
-           "endDateTime" : "2025-08-31T21:30:00+02:00"
+           "endDateTime" : "2025-08-31T21:30:00+02:00",
+           "size" : "big"
          }, {
            "q": "show me 12 events in Paris this week",
            "id" : "859d1167-98da-4da2-b11b-1bb7d43f344e",
@@ -101,7 +109,8 @@ export class InMemoryDataService implements InMemoryDbService {
            "location" : "Église Saint‑Eustache, 2 Impasse Saint‑Eustache, 75001 Paris, France",
            "timezone" : null,
            "startDateTime" : "2025-08-31T19:30:00+02:00",
-           "endDateTime" : "2025-08-31T21:30:00+02:00"
+           "endDateTime" : "2025-08-31T21:30:00+02:00",
+           "size" : "average"
          }, {
            "q": "show me 12 events in Paris this week",
            "id" : "0e1068a6-93ed-4e8f-b164-20e83871bca3",
@@ -112,7 +121,8 @@ export class InMemoryDataService implements InMemoryDbService {
            "location" : "Le Perchoir Marais (BHV), 37 Rue de la Verrerie, 75004 Paris, France",
            "timezone" : null,
            "startDateTime" : "2025-08-31T19:30:00+02:00",
-           "endDateTime" : "2025-08-31T21:30:00+02:00"
+           "endDateTime" : "2025-08-31T21:30:00+02:00",
+           "size" : "average"
          }, {
            "q": "show me 12 events in Paris this week",
            "id" : "ba74ec89-c696-4514-a106-08bf63776603",
@@ -123,7 +133,8 @@ export class InMemoryDataService implements InMemoryDbService {
            "location" : "Les Frigos, 19 Rue des Frigos, 75013 Paris, France",
            "timezone" : null,
            "startDateTime" : "2025-08-31T19:30:00+02:00",
-           "endDateTime" : "2025-08-31T21:30:00+02:00"
+           "endDateTime" : "2025-08-31T21:30:00+02:00",
+           "size" : "little"
          }, {
            "q": "show me 12 events in Paris this week",
            "id" : "24e4c1fb-ef7d-413f-b2c4-a1c3999aa0d6",
@@ -134,7 +145,8 @@ export class InMemoryDataService implements InMemoryDbService {
            "location" : "Point Éphémère, 200 Quai de Valmy, 75010 Paris, France",
            "timezone" : null,
            "startDateTime" : "2025-08-31T19:30:00+02:00",
-           "endDateTime" : "2025-08-31T21:30:00+02:00"
+           "endDateTime" : "2025-08-31T21:30:00+02:00",
+           "size" : "big"
          } ];
     return { events };
   }
