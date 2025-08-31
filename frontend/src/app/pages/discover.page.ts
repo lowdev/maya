@@ -17,7 +17,7 @@ import { Event } from '../models/event';
       <div class="overlay">
         <h3 class="title">{{ e.title }}</h3>
         <div class="bottom-overlay">
-          <div class="date">{{ e.startDateTime | date:'d MMMM y' | uppercase }}</div>
+          <div class="date">{{ e.startDateTime | date:'MMMM y' | uppercase }}</div>
           <button class="btn">+ Ajouter</button>
         </div>
       </div>
