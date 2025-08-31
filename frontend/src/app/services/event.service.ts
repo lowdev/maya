@@ -5,10 +5,23 @@ import { Observable } from 'rxjs';
 import { Event } from '../models/event';
 @Injectable({ providedIn: 'root' })
 export class EventService {
-  private base='http://localhost:8080/api';
+  private base='/api';
+
   constructor(private http: HttpClient){}
-  search(query:string):Observable<Event[]>{ return this.http.post<Event[]>(`${this.base}/events/search`, { query }); }
-  get(id:string):Observable<Event>{ return this.http.get<Event>(`${this.base}/events/${id}`); }
-  downloadIcs(id:string){ return this.http.get(`${this.base}/calendar/ics/${id}`, { responseType:'blob' }); }
-  googleUrl(id:string){ return this.http.get(`${this.base}/calendar/google-url/${id}`, { responseType:'text' }); }
+
+  search(query:string):Observable<Event[]> { 
+    return this.http.get<Event[]>(`${this.base}/events?q=${query}`);
+  }
+  
+  get(id:string):Observable<Event> {
+    return this.http.get<Event>(`${this.base}/events/${id}`);
+  }
+  
+  downloadIcs(id:string) {
+    return this.http.get(`${this.base}/calendar/ics/${id}`, { responseType:'blob' });
+  }
+
+  googleUrl(id:string) {
+    return this.http.get(`${this.base}/calendar/google-url/${id}`, { responseType:'text' });
+  }
 }
