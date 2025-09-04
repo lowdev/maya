@@ -1,0 +1,6 @@
+services:
+	- type: web
+	  runtime: docker
+      name: webdis
+	  repo: https://github.com/lowdev/maya
+    
